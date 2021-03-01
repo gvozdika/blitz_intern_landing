@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1f1f1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    
+    .arrow {
+        font-size: 30px;
+        &:nth-child(3) {
+            margin-top: -20px;
+        }
+    }
+
+    &--dark {
+        color: #bebebe;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .wrapper--dark {
+        position: static;
+        transform: none;
+        margin: 40px;
+    }
+}
+
+@media (max-width: 570px) {
+    .wrapper {
+        display: none;
+    }
+}
